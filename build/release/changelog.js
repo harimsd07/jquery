@@ -29,10 +29,10 @@ function ticketUrl( ticketId ) {
 }
 
 function getTicketsForCommit( commit ) {
-	var tickets = [];
+	let tickets = [];
 
 	commit.replace( rcommit, function( _match, refType, ticketId ) {
-		var ticket = {
+		let ticket = {
 			url: ticketUrl( ticketId ),
 			label: "#" + ticketId
 		};
