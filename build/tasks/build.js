@@ -218,7 +218,7 @@ export async function build( {
 		setOverride(
 			"./src/exports/global.js",
 			"import { jQuery } from \"../core.js\";\n\n" +
-				"jQuery.noConflict = function() {};"
+				"jQuery.noConflict = () => {};"
 		);
 		excluded.splice( index, 1 );
 	}
